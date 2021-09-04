@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="form">
+        <form action="" method="GET">
+            <h1>Register With Us</h1>
+
+            <div class="field">
+                <label for="username">Username</label>
+                <input type="text" id="username" autocomplete="off" placeholder="Enter username">
+                <p class="vm-username">
+                    Username must be at least 3 characters
+                </p>
+            </div>
+
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+                <p class="vm-email">
+                    Email is not valid
+                </p>
+            </div>
+
+            <div class="field">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+                <p class="vm-password">
+                    Password must be at least 6 characters
+                </p>
+            </div>
+
+            <div class="field">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Enter password again">
+                <p class="vm-confirm-password">
+                    Password2 is required
+                </p>
+            </div>
+
+            <button class="btn-submit" type="button" value="Submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
